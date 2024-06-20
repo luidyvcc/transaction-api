@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node build/server.js",
     "dev": "tsx watch src/server.ts",
     "knex": "node --no-warnings --import tsx ./node_modules/.bin/knex",
     "lint": "eslint src --ext .js,.ts,.tsx --fix",
-    "build": "tsup src -d build --minify",
+    "build": "tsup src -d build",
     "test": "vitest"
   },
   "keywords": [],
